@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="stylee/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylee/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="color-section ">
+        <div class="container pt-5">
+            <div class="mb-5 text-center font-box position-relative">
+                <h1 class="font-text">Bookmarker</h1>
+            </div>
+
+            <div class="line ">
+    
+            </div>
+
+            <div class=" mt-4 mb-5 text-center">
+                <h4 class="text-warning-emphasis"><span><i class="fa-solid fa-bookmark text-danger"></i></span> Bookmark your favorite sites <span><i class="fa-solid fa-bookmark text-danger"></i></span></h4>
+            </div>
+
+            <div class="mb-2">
+                <i class="fa-solid fa-book-bookmark pe-2"></i>
+                <span class="fw-bolder">Site Name</span>
+            </div>
+            <div class=" mb-4">
+                <input oninput="validateBookmarkName(this)" type="text" class="form-control " id="bookmarName" placeholder="Bookmark Name">
+            </div>
+
+            <div class="mb-2">
+                <i class="fa-solid fa-link pe-2" ></i>
+                <span class="fw-bolder">Site URL</span>
+            </div>
+            <div class=" mb-4">
+                <input type="url" oninput="validateBookmarkName(this)" class="form-control" id="websiteUrl" placeholder="Website URL">
+            </div>
+
+            <div class="text-center mb-4">
+                <button id="addBtn"  class="btn btn-danger py-1 px-5">Submit</button>
+                <button id="updateBtn"  class="btn btn-warning py-1 px-5 d-none">Update</button>
+            </div>
+
+            <div class=" mb-3">
+                <input  type="text" class="form-control" id="serchInput" placeholder="search">
+                <label for="floatingInput"></label>
+              </div>
+
+            <div class="line mb-5">
+    
+            </div>
+            
+
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                    </tr>
+                </thead>
+                    <tbody id="rowData">
+                        
+                    </tbody>
+              </table>
+            <div id="rowData">
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
